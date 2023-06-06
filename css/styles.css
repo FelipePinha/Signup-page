@@ -19,7 +19,7 @@ body {
 }
 
 .img-container {
-    width: 50%;
+    width: 60%;
 }
 
 .img-container img {
@@ -27,7 +27,7 @@ body {
 }
 
 .form-side {
-    width: 50%;
+    width: 40%;
     padding-left: 50px;
 }
 
@@ -44,10 +44,12 @@ body {
 }
 
 .form-side button {
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     padding: 10px 20px;
     border-radius: 36px;
     background-color: #1e293b;
@@ -83,4 +85,86 @@ form {
     border: 2px solid #334155;
     background-color: #0f172a;
     color: #fff;
+    font-size: 1rem;
+}
+
+.checkbox-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.checkbox-control label {
+    color: #fff;
+    font-size: 0.87rem;
+    cursor: pointer;
+}
+
+.checkbox-control input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+    accent-color: #334155;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    background-color: #2563eb;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.has-account {
+    display: flex;
+    font-size: 0.87rem;
+    gap: 6px;
+}
+
+.has-account p {
+    font-size: 0.87rem;
+    color: #64748b;
+}
+
+.has-account a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+@media screen and (max-width: 769px) {
+    .img-container,
+    .form-side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-side {
+        padding: 0;
+    }
+
+    .form-side h1 {
+        font-size: 2.2rem;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    .checkbox-control {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .has-account a {
+        margin: 0 auto;
+    }
+
+    .has-account p {
+        display: none;
+    }
 }
