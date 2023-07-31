@@ -86,6 +86,14 @@ form {
     background-color: #0f172a;
     color: #fff;
     font-size: 1rem;
+    outline: none;
+}
+
+.form-control input.error {
+    border-color: #f00;
+}
+.form-control input.success {
+    border-color: #0f0;
 }
 
 .checkbox-control {
